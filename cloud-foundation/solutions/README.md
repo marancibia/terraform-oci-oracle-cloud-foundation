@@ -59,6 +59,6 @@ Other assets have been moved to the `Live-ai-hub` folder.
 
 The folder follows a pattern that brings AI to your data where it already lives, enabling the use of live, federated enterprise information across SaaS applications, databases, data lakes, catalogs, and content repositories. This allows users and agents to talk to data and reason across data with the right governance in place.
 
-This approach matters because most organizations are not blocked by AI models themselves. They are blocked by disconnected data, stale copies, and the complexity of moving and reshaping information. When AI runs on live data in place, it can provide more timely answers, better context, and higher trust, without requiring a long data platform transformation first.
+This approach matters because many organizations have disconnected data, stale copies, and fight the complexity of moving and reshaping information. When AI runs on live data in place, it can provide more timely answers, better context, and higher trust, without requiring a data platform transformation first.
 
 The benefits are tangible: faster time-to-value through quick wins that can scale, better outcomes because AI is grounded in current enterprise context, lower cost and risk by reducing replication and ETL sprawl, and production readiness with the controls enterprises need, including security, resiliency, observability, and scalability.
