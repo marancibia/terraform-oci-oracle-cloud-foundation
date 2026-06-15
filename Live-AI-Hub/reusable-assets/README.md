@@ -4,4 +4,6 @@
 ## <a name="Reusable Assets"></a>Overview
 
 
-- Fashion-Retail-Hub - Deploy Fashion-Retail-Hub demo showcases how a fashion retailer can evolve into an AI-driven business by connecting live enterprise data across multiple platforms and turning it into personalized, customer-facing experiences. The solution brings together operational, analytical, and external data to power intelligent conversations, better recommendations, and more effective digital engagement.
+- **Retail Hub / Fashion Advisor Team Agent** - demonstrates a multi-agent retail experience where specialized agents work together to understand the customer, gather customer profile and analytics data, retrieve weather context, search back-office FAQs and terms, research fashion articles and product catalog information, generate grounded fashion recommendations, and support add-to-cart actions.
+
+- **Ticket AI Hub** - (code assets coming soon) - demonstrates an intelligent service and ticketing hub that connects to existing ticketing systems, customer channels, customer data, and enterprise knowledge bases. It is designed to improve customer satisfaction, increase resolution accuracy, reduce response time, support intelligent automation, provide knowledge-grounded answers, improve quality and accuracy, support smart escalation, and deliver operational insights and analytics.
