@@ -1,4 +1,4 @@
-# Copyright © 2023, Oracle and/or its affiliates.
+# Copyright © 2026, Oracle and/or its affiliates.
 # All rights reserved. Licensed under the Universal Permissive License (UPL), Version 1.0 as shown at https://oss.oracle.com/licenses/upl.
 
 resource "null_resource" "sqlcl-create-usr" {
@@ -8,11 +8,8 @@ resource "null_resource" "sqlcl-create-usr" {
 
                 echo 'Download the apex applications'
                 chmod 777 ./scripts/
-                # wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/6Oy9O8JVmddTzPQ8PsavtpzByQhjo4jGP1mRC3MK3o7QE7vGXKb8573-6etTdGUy/n/c4u04/b/building_blocks_utilities/o/select-ai-apex-demo/f101.sql -P ./scripts/
-                # old f101 wget https://github.com/oracle-devrel/oracle-autonomous-database-samples/blob/main/apex/select-ai-chat/f101.sql?raw=true -P ./scripts/
-                # wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/nZNjLXKzOO23bwedhMxks1E4uMIC-wT3hIh0cpUvvltH-h84ngcLKcWuQUcdfN4g/n/c4u02/b/hosted_workshops/o/f101.sql -P ./scripts/
+                wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/nZNjLXKzOO23bwedhMxks1E4uMIC-wT3hIh0cpUvvltH-h84ngcLKcWuQUcdfN4g/n/c4u02/b/hosted_workshops/o/f101.sql -P ./scripts/
                 wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/6Oy9O8JVmddTzPQ8PsavtpzByQhjo4jGP1mRC3MK3o7QE7vGXKb8573-6etTdGUy/n/c4u04/b/building_blocks_utilities/o/select-ai-apex-demo/f100-genai-project.sql -P ./scripts/
-                wget https://adwc4pm.objectstorage.us-sanjose-1.oci.customer-oci.com/p/L2B_ow1NawG1bfrocaajfSOSMxcwF2IRrKr_lCjLPQzTcDbY-T7cdBOyuvNmZtRE/n/adwc4pm/b/chatdbapp/o/f101v5.4.sql -P ./scripts/
 
                 # install the data
       

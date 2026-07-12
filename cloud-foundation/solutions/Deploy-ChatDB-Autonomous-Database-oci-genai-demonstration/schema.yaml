@@ -1,10 +1,10 @@
-# Copyright © 2024, Oracle and/or its affiliates.
+# Copyright © 2026, Oracle and/or its affiliates.
 # All rights reserved. Licensed under the Universal Permissive License (UPL), Version 1.0 as shown at https://oss.oracle.com/licenses/upl.
 
 title: "Deploy ChatDB - Autonomous Database OCI GenAI demonstration"
 stackDescription: "Creates an ADB with MovieStream data plus the ChatDB APEX demo app"
 schemaVersion: 1.1.0
-version: "20230112"
+version: "20260713"
 locale: "en"
 groupings:
   - title: "General Settings"

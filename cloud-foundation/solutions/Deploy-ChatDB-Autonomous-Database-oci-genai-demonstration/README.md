@@ -394,9 +394,9 @@ Also in the modules folder there is a folder called provisioner - that will prov
 Secondly, populate the `terraform.tf` file with the disared configuration following the information:
 
 
-# Autonomous Data Warehouse
+# Autonomous AI Lakehouse (formerly Data Warehouse)
 
-The ADW subsystem / module is able to create ADW/ATP databases.
+The Autonomous AI Lakehouse subsystem / module is able to create Autonomous AI Lakehouse /ATP databases.
 
 * Parameters:
     * __db_name__ - The database name. The name must begin with an alphabetic character and can contain a maximum of 14 alphanumeric characters. Special characters are not permitted. The database name must be unique in the tenancy.
@@ -657,7 +657,7 @@ https://RDDAINSUH6U1OKC-ORACLEMOVIESTREAM.adb.us-ashburn-1.oraclecloudapps.com/o
 
 
 ## <a name="team"></a>The Team
-- **Owners**: [Panaitescu Ionel](https://github.com/ionelpanaitescu) , [Marty Gubar](https://github.com/martygubar)
+- **Owners**: [Panaitescu Ionel](https://github.com/ionelpanaitescu) , [Marcos Arancibia](https://github.com/marancibia)
 
 ## <a name="feedback"></a>Feedback
 We welcome your feedback. To post feedback, submit feature ideas or report bugs, please use the Issues section on this repository.	

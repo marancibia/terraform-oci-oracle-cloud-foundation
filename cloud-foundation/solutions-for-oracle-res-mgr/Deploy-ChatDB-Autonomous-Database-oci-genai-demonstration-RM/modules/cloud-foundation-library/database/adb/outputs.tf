@@ -1,7 +1,7 @@
-# Copyright © 2023, Oracle and/or its affiliates.
+# Copyright © 2026, Oracle and/or its affiliates.
 # All rights reserved. Licensed under the Universal Permissive License (UPL), Version 1.0 as shown at https://oss.oracle.com/licenses/upl.
 
-output "atp_db_id" {
+output "adb_db_id" {
   value = {
    for adw in oci_database_autonomous_database.adw:
     adw.display_name => adw.id
@@ -35,8 +35,8 @@ output "graph_studio_url" {
   value = [for b in oci_database_autonomous_database.adw : b.connection_urls.0.graph_studio_url]
 }
 
-output "machine_learning_user_management_url" {
-  value = [for b in oci_database_autonomous_database.adw : b.connection_urls.0.machine_learning_user_management_url]
+output "machine_learning_ui_url" {
+  value = [for b in oci_database_autonomous_database.adw : b.connection_urls.0.machine_learning_notebook_url]
 }
 
 output "adb_wallet_content" {
@@ -44,7 +44,7 @@ value = oci_database_autonomous_database_wallet.autonomous_database_wallet["adw"
 }
 
 output "database_fully_qualified_name" {
-  value = lower(trimsuffix(trimprefix(join("\n", [for b in oci_database_autonomous_database.adw : b.connection_urls.0.graph_studio_url]), "https://"), "/graphstudio/"))
+  value = trimprefix(split("/graphstudio", lower(join("\n", [for b in oci_database_autonomous_database.adw : b.connection_urls.0.graph_studio_url])))[0], "https://")
 }
 
 output "adw" {
@@ -58,7 +58,6 @@ output "apex_url" {
   value = [for b in oci_database_autonomous_database.adw : b.connection_urls.0.apex_url]
 }
 
-output "select_ai_demo_url" {
-  value = join("", [lower(trimsuffix(join("\n", [for b in oci_database_autonomous_database.adw : b.connection_urls.0.graph_studio_url]), "/graphstudio/")),"/ords/r/moviestream/chatdb"])
+output "askoracle_select_ai_app_url" {
+  value = join("", [split("/graphstudio", lower(join("\n", [for b in oci_database_autonomous_database.adw : b.connection_urls.0.graph_studio_url])))[0], "/ords/r/moviestream/chatdb"])
 }
-

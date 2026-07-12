@@ -1,4 +1,4 @@
-# Copyright © 2024, Oracle and/or its affiliates.
+# Copyright © 2026, Oracle and/or its affiliates.
 # All rights reserved. Licensed under the Universal Permissive License (UPL), Version 1.0 as shown at https://oss.oracle.com/licenses/upl.
 
 
@@ -13,12 +13,12 @@ variable "tenancy_ocid" {
 
 variable "region" {
     type = string
-    # default = ""
+    default = ""
 }
 
 variable "compartment_id" {
   type = string
-  # default = ""
+  default = ""
 }
 
 variable "user_ocid" {
@@ -56,6 +56,8 @@ variable "db_compute_model" {
 
 variable "db_compute_count" {
   type = number
+  default = 4
+  # default = 2
 }
 
 variable "db_size_in_tbs" {
@@ -115,7 +117,8 @@ variable "llm_region" {
 
 variable "tag" {
   type    = string
-  default = "gen-ai"
+  # default = "gen-ai"
+  default = "moviestream-analytics"
 }
 
 variable "run_post_load_procedures" {

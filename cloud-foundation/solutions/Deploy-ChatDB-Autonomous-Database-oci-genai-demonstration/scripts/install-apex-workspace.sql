@@ -1,7 +1,7 @@
--- download the app using wget:
--- wget https://martygubar.github.io/adb/shared/adb-speaks-human/apex-setup/f101.sql
+-- Copyright © 2026, Oracle and/or its affiliates.
+-- All rights reserved. Licensed under the Universal Permissive License (UPL), Version 1.0 as shown at https://oss.oracle.com/licenses/upl.
 
--- as admin
+-- as ADMIN, run this script to create the APEX workspace and user for the MOVIESTREAM schema. The MOVIESTREAM schema must already exist in the database.
 DECLARE
     l_workspace_name VARCHAR2(100) := 'MOVIESTREAM';
     l_schema_name VARCHAR2(100) := 'MOVIESTREAM';
