@@ -1,4 +1,4 @@
-# Copyright © 2023, Oracle and/or its affiliates.
+# Copyright © 2026, Oracle and/or its affiliates.
 # All rights reserved. Licensed under the Universal Permissive License (UPL), Version 1.0 as shown at https://oss.oracle.com/licenses/upl.
 
 # Autonomous Database Outputs:
@@ -19,7 +19,7 @@ output "adb_user_password" {
   value = "watchS0meMovies#"
 }
 
-output "ADW_Database_db_connection" {
+output "adb_database_db_connection" {
   value = module.adb.db_connection
 }
 
@@ -27,11 +27,11 @@ output "database_fully_qualified_name" {
   value = module.adb.database_fully_qualified_name
 }
 
-output "ADW_Database_ip" {
+output "adb_database_private_endpoint_ip" {
   value = module.adb.private_endpoint_ip
 }
 
-output "Database_Actions" {
+output "database_actions" {
   value = module.adb.url
 }
 
@@ -39,14 +39,14 @@ output "graph_studio_url" {
   value = module.adb.graph_studio_url
 }
 
-output "machine_learning_user_management_url" {
-  value = module.adb.machine_learning_user_management_url
+output "machine_learning_ui_url" {
+  value = module.adb.machine_learning_ui_url
 }
 
 output "apex_url" {
   value = module.adb.apex_url
 }
 
-output "select_ai_demo_url" {
-  value = module.adb.select_ai_demo_url
+output "askoracle_select_ai_app_url" {
+  value = module.adb.askoracle_select_ai_app_url
 }
